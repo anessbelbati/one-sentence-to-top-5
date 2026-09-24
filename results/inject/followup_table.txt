@@ -1,0 +1,57 @@
+Follow-up. Cells: top-5 count (harsh) / #1 count (harsh), out of n searches. clean/echo/stuff are the pilot's.
+para = the search reworded; related = a related search asking for something else; off* = a truly off-topic
+page in the target's place: plain, with the exact search, with the reworded search, with the stuffed keywords.
+
+model                                 n      clean       echo      stuff       para    related   offtopic    offecho    offpara   offstuff
+------------------------------------------------------------------------------------------------------------------------------------------
+Keyword search (BM25)               100        0/0      92/68      98/87      58/26      68/23        0/0      51/25       18/5      91/75
+zerank-2 (ZeroEntropy, hosted API)  100        3/0      58/11       47/6       55/9       49/5        0/0       23/1       27/1       18/1
+                                   control page, one call vs the clean list: largest score change 2.78e-17, median 0
+Cohere Rerank 4 Pro                 100        4/1      83/32      86/29      71/23       53/9        0/0      66/25      53/16      64/19
+                                   control page, one call vs the clean list: largest score change 0.0051, median 0
+Cohere Rerank 4 Fast                100        6/1      85/44      83/35      76/35      56/15        0/0      60/18      54/14      58/12
+                                   control page, one call vs the clean list: largest score change 0.00381, median 0
+Jev, 4-level rubric, 30 pages in o  100        0/0       19/1        9/0       37/3       31/1        0/0        0/0       16/0        2/0
+Jev, one pick among 30              100        2/1       76/9       30/3      85/18       47/9        3/0       67/3      76/12       27/2
+DeepSeek V4.1 Flash chatbot, 30 pa    0        0/0       17/5        5/2      53/15          -          -          -          -          -
+                                   missing rows: 500 (e.g. ['related/scifact/51', 'related/scifact/142', 'related/scifact/354'])
+Jev, yes/no per page                100        1/0       35/4       17/0      48/13       33/2        0/0       19/3      29/12       14/0
+Open-Jev 9B, yes/no per page (self  100       12/1      50/21       32/9      55/20      46/11        0/0      28/14      33/17       12/5
+Open-Jev 2B, yes/no per page (self  100        8/2      52/26      36/13      51/20      30/10        4/1      29/18      36/21       19/7
+Together tev1-4B, per page (self-h  100        7/0      39/11       20/1      46/15       27/3        3/0      26/10      35/13       12/3
+Plain Qwen3.5-4B, yes/no per page   100        6/0       34/1       12/0       35/4       19/1        0/0       17/1       22/4        8/0
+Laya 421M, 4-level rubric per page  100        6/0      50/23      55/26      65/37      35/14        1/0      34/15      59/33      55/24
+
+Reworded vs exact on the same searches, split by how many of the search's content words the rewrite kept (under half: 55 searches; half or more: 45). Cells: top-5 count clean / exact / reworded.
+
+Keyword search (BM25)              kept under half:   0 /  51 /  24     kept half or more:   0 /  41 /  34
+zerank-2 (ZeroEntropy, hosted API) kept under half:   1 /  23 /  20     kept half or more:   2 /  35 /  35
+Cohere Rerank 4 Pro                kept under half:   3 /  42 /  33     kept half or more:   1 /  41 /  38
+Cohere Rerank 4 Fast               kept under half:   1 /  43 /  37     kept half or more:   5 /  42 /  39
+Jev, 4-level rubric, 30 pages in o kept under half:   0 /   7 /  16     kept half or more:   0 /  12 /  21
+Jev, one pick among 30             kept under half:   2 /  39 /  41     kept half or more:   0 /  37 /  44
+DeepSeek V4.1 Flash chatbot, 30 pa kept under half:   0 /  10 /  27     kept half or more:   0 /   7 /  26
+Jev, yes/no per page               kept under half:   1 /  15 /  24     kept half or more:   0 /  20 /  24
+Open-Jev 9B, yes/no per page (self kept under half:   4 /  20 /  24     kept half or more:   8 /  30 /  31
+Open-Jev 2B, yes/no per page (self kept under half:   2 /  25 /  21     kept half or more:   6 /  27 /  30
+Together tev1-4B, per page (self-h kept under half:   4 /  16 /  20     kept half or more:   3 /  23 /  26
+Plain Qwen3.5-4B, yes/no per page  kept under half:   3 /  15 /  13     kept half or more:   3 /  19 /  22
+Laya 421M, 4-level rubric per page kept under half:   4 /  24 /  34     kept half or more:   2 /  26 /  31
+
+Paired tests on top-5 (same searches): gained / lost, exact McNemar p
+
+Keyword search (BM25)              clean->para +58/-0 p=6.9e-18 | para->echo +34/-0 p=1.2e-10 | clean->related +68/-0 p=6.8e-21 | offtopic->offecho +51/-0 p=8.9e-16 | offtopic->offpara +18/-0 p=7.6e-06 | offtopic->offstuff +91/-0 p=8.1e-28 | echo->offecho +0/-41 p=9.1e-13
+zerank-2 (ZeroEntropy, hosted API) clean->para +52/-0 p=4.4e-16 | para->echo +3/-0 p=0.25 | clean->related +46/-0 p=2.8e-14 | offtopic->offecho +23/-0 p=2.4e-07 | offtopic->offpara +27/-0 p=1.5e-08 | offtopic->offstuff +18/-0 p=7.6e-06 | echo->offecho +0/-35 p=5.8e-11
+Cohere Rerank 4 Pro                clean->para +67/-0 p=1.4e-20 | para->echo +12/-0 p=0.00049 | clean->related +49/-0 p=3.6e-15 | offtopic->offecho +66/-0 p=2.7e-20 | offtopic->offpara +53/-0 p=2.2e-16 | offtopic->offstuff +64/-0 p=1.1e-19 | echo->offecho +4/-21 p=0.00091
+Cohere Rerank 4 Fast               clean->para +70/-0 p=1.7e-21 | para->echo +9/-0 p=0.0039 | clean->related +50/-0 p=1.8e-15 | offtopic->offecho +60/-0 p=1.7e-18 | offtopic->offpara +54/-0 p=1.1e-16 | offtopic->offstuff +58/-0 p=6.9e-18 | echo->offecho +1/-26 p=4.2e-07
+Jev, 4-level rubric, 30 pages in o clean->para +37/-0 p=1.5e-11 | para->echo +0/-18 p=7.6e-06 | clean->related +31/-0 p=9.3e-10 | offtopic->offecho +0/-0 p=1 | offtopic->offpara +16/-0 p=3.1e-05 | offtopic->offstuff +2/-0 p=0.5 | echo->offecho +0/-19 p=3.8e-06
+Jev, one pick among 30             clean->para +83/-0 p=2.1e-25 | para->echo +3/-12 p=0.035 | clean->related +45/-0 p=5.7e-14 | offtopic->offecho +64/-0 p=1.1e-19 | offtopic->offpara +73/-0 p=2.1e-22 | offtopic->offstuff +25/-1 p=8e-07 | echo->offecho +5/-14 p=0.064
+DeepSeek V4.1 Flash chatbot, 30 pa clean->para +53/-0 p=2.2e-16 | para->echo +4/-40 p=1.7e-08 | clean->related +0/-0 p=1 | offtopic->offecho +0/-0 p=1 | offtopic->offpara +0/-0 p=1 | offtopic->offstuff +0/-0 p=1 | echo->offecho +0/-0 p=1
+Jev, yes/no per page               clean->para +47/-0 p=1.4e-14 | para->echo +2/-15 p=0.0023 | clean->related +33/-1 p=4.1e-09 | offtopic->offecho +19/-0 p=3.8e-06 | offtopic->offpara +29/-0 p=3.7e-09 | offtopic->offstuff +14/-0 p=0.00012 | echo->offecho +0/-16 p=3.1e-05
+Open-Jev 9B, yes/no per page (self clean->para +43/-0 p=2.3e-13 | para->echo +5/-10 p=0.3 | clean->related +37/-3 p=1.9e-08 | offtopic->offecho +28/-0 p=7.5e-09 | offtopic->offpara +33/-0 p=2.3e-10 | offtopic->offstuff +12/-0 p=0.00049 | echo->offecho +3/-25 p=2.7e-05
+Open-Jev 2B, yes/no per page (self clean->para +44/-1 p=2.6e-12 | para->echo +6/-5 p=1 | clean->related +25/-3 p=2.7e-05 | offtopic->offecho +25/-0 p=6e-08 | offtopic->offpara +32/-0 p=4.7e-10 | offtopic->offstuff +16/-1 p=0.00027 | echo->offecho +5/-28 p=6.6e-05
+Together tev1-4B, per page (self-h clean->para +39/-0 p=3.6e-12 | para->echo +0/-7 p=0.016 | clean->related +22/-2 p=3.6e-05 | offtopic->offecho +23/-0 p=2.4e-07 | offtopic->offpara +32/-0 p=4.7e-10 | offtopic->offstuff +9/-0 p=0.0039 | echo->offecho +6/-19 p=0.015
+Plain Qwen3.5-4B, yes/no per page  clean->para +30/-1 p=3e-08 | para->echo +5/-6 p=1 | clean->related +15/-2 p=0.0023 | offtopic->offecho +17/-0 p=1.5e-05 | offtopic->offpara +22/-0 p=4.8e-07 | offtopic->offstuff +8/-0 p=0.0078 | echo->offecho +1/-18 p=7.6e-05
+Laya 421M, 4-level rubric per page clean->para +59/-0 p=3.5e-18 | para->echo +4/-19 p=0.0026 | clean->related +30/-1 p=3e-08 | offtopic->offecho +33/-0 p=2.3e-10 | offtopic->offpara +58/-0 p=6.9e-18 | offtopic->offstuff +54/-0 p=1.1e-16 | echo->offecho +2/-18 p=0.0004
+
+Cohere Pro, reworded search: full 30-page lists vs the one-call route, 100 searches: same rank in 99, summed rank difference 1; top-5 71 vs 71, #1 23 vs 23 (full lists vs one call)

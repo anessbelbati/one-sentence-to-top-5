@@ -1,0 +1,2590 @@
+{
+ "n": 100,
+ "para_low_overlap_n": 55,
+ "para_high_overlap_n": 45,
+ "models": {
+  "bm25-edit": {
+   "label": "Keyword search (BM25)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.0
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 92,
+     "top5_lenient": 92,
+     "top1_harsh": 68,
+     "top1_lenient": 68,
+     "median_rank_harsh": 1.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 98,
+     "top5_lenient": 98,
+     "top1_harsh": 87,
+     "top1_lenient": 87,
+     "median_rank_harsh": 1.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 58,
+     "top5_lenient": 58,
+     "top1_harsh": 26,
+     "top1_lenient": 26,
+     "median_rank_harsh": 3.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 68,
+     "top5_lenient": 68,
+     "top1_harsh": 23,
+     "top1_lenient": 23,
+     "median_rank_harsh": 3.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 51,
+     "top5_lenient": 51,
+     "top1_harsh": 25,
+     "top1_lenient": 25,
+     "median_rank_harsh": 5.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 18,
+     "top5_lenient": 18,
+     "top1_harsh": 5,
+     "top1_lenient": 5,
+     "median_rank_harsh": 30.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 91,
+     "top5_lenient": 91,
+     "top1_harsh": 75,
+     "top1_lenient": 75,
+     "median_rank_harsh": 1.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 51,
+     "top1_harsh": 39
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 24,
+     "top1_harsh": 10
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 41,
+     "top1_harsh": 29
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 34,
+     "top1_harsh": 16
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 58,
+     "lost": 0,
+     "p": 6.938893903907228e-18
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 34,
+     "lost": 0,
+     "p": 1.1641532182693481e-10
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 68,
+     "lost": 0,
+     "p": 6.776263578034403e-21
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 51,
+     "lost": 0,
+     "p": 8.881784197001252e-16
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 18,
+     "lost": 0,
+     "p": 7.62939453125e-06
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 91,
+     "lost": 0,
+     "p": 8.077935669463161e-28
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 0,
+     "lost": 41,
+     "p": 9.094947017729282e-13
+    }
+   }
+  },
+  "zerank-2": {
+   "label": "zerank-2 (ZeroEntropy, hosted API)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.004755925000000001,
+    "control_drift_max": 2.7755575615628914e-17,
+    "control_drift_median": 0.0
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 3,
+     "top5_lenient": 3,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 20.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 58,
+     "top5_lenient": 58,
+     "top1_harsh": 11,
+     "top1_lenient": 11,
+     "median_rank_harsh": 4.5
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 47,
+     "top5_lenient": 47,
+     "top1_harsh": 6,
+     "top1_lenient": 6,
+     "median_rank_harsh": 6.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 55,
+     "top5_lenient": 55,
+     "top1_harsh": 9,
+     "top1_lenient": 9,
+     "median_rank_harsh": 4.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 49,
+     "top5_lenient": 49,
+     "top1_harsh": 5,
+     "top1_lenient": 5,
+     "median_rank_harsh": 6.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 23,
+     "top5_lenient": 23,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 14.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 27,
+     "top5_lenient": 27,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 12.5
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 18,
+     "top5_lenient": 18,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 16.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 1,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 23,
+     "top1_harsh": 6
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 20,
+     "top1_harsh": 5
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 2,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 35,
+     "top1_harsh": 5
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 35,
+     "top1_harsh": 4
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 52,
+     "lost": 0,
+     "p": 4.440892098500626e-16
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 3,
+     "lost": 0,
+     "p": 0.25
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 46,
+     "lost": 0,
+     "p": 2.842170943040401e-14
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 23,
+     "lost": 0,
+     "p": 2.384185791015625e-07
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 27,
+     "lost": 0,
+     "p": 1.4901161193847656e-08
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 18,
+     "lost": 0,
+     "p": 7.62939453125e-06
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 0,
+     "lost": 35,
+     "p": 5.820766091346741e-11
+    }
+   }
+  },
+  "cohere-pro": {
+   "label": "Cohere Rerank 4 Pro",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.25000000000000017,
+    "control_drift_max": 0.005102559999999978,
+    "control_drift_median": 0.0
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 4,
+     "top5_lenient": 5,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 21.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 83,
+     "top5_lenient": 83,
+     "top1_harsh": 32,
+     "top1_lenient": 32,
+     "median_rank_harsh": 2.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 86,
+     "top5_lenient": 86,
+     "top1_harsh": 29,
+     "top1_lenient": 29,
+     "median_rank_harsh": 2.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 71,
+     "top5_lenient": 71,
+     "top1_harsh": 23,
+     "top1_lenient": 23,
+     "median_rank_harsh": 3.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 53,
+     "top5_lenient": 53,
+     "top1_harsh": 9,
+     "top1_lenient": 9,
+     "median_rank_harsh": 5.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 66,
+     "top5_lenient": 66,
+     "top1_harsh": 25,
+     "top1_lenient": 25,
+     "median_rank_harsh": 3.5
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 53,
+     "top5_lenient": 53,
+     "top1_harsh": 16,
+     "top1_lenient": 16,
+     "median_rank_harsh": 5.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 64,
+     "top5_lenient": 64,
+     "top1_harsh": 19,
+     "top1_lenient": 19,
+     "median_rank_harsh": 4.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 3,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 42,
+     "top1_harsh": 16
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 33,
+     "top1_harsh": 8
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 1,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 41,
+     "top1_harsh": 16
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 38,
+     "top1_harsh": 15
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 67,
+     "lost": 0,
+     "p": 1.3552527156068805e-20
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 12,
+     "lost": 0,
+     "p": 0.00048828125
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 49,
+     "lost": 0,
+     "p": 3.552713678800501e-15
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 66,
+     "lost": 0,
+     "p": 2.710505431213761e-20
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 53,
+     "lost": 0,
+     "p": 2.220446049250313e-16
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 64,
+     "lost": 0,
+     "p": 1.0842021724855044e-19
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 4,
+     "lost": 21,
+     "p": 0.0009105205535888672
+    }
+   }
+  },
+  "cohere-fast": {
+   "label": "Cohere Rerank 4 Fast",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.20000000000000015,
+    "control_drift_max": 0.003808649999999969,
+    "control_drift_median": 0.0
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 6,
+     "top5_lenient": 7,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 20.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 85,
+     "top5_lenient": 85,
+     "top1_harsh": 44,
+     "top1_lenient": 44,
+     "median_rank_harsh": 2.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 83,
+     "top5_lenient": 83,
+     "top1_harsh": 35,
+     "top1_lenient": 35,
+     "median_rank_harsh": 2.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 76,
+     "top5_lenient": 77,
+     "top1_harsh": 35,
+     "top1_lenient": 35,
+     "median_rank_harsh": 3.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 56,
+     "top5_lenient": 56,
+     "top1_harsh": 15,
+     "top1_lenient": 15,
+     "median_rank_harsh": 4.5
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 60,
+     "top5_lenient": 61,
+     "top1_harsh": 18,
+     "top1_lenient": 18,
+     "median_rank_harsh": 4.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 54,
+     "top5_lenient": 54,
+     "top1_harsh": 14,
+     "top1_lenient": 14,
+     "median_rank_harsh": 5.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 58,
+     "top5_lenient": 58,
+     "top1_harsh": 12,
+     "top1_lenient": 12,
+     "median_rank_harsh": 4.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 1,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 43,
+     "top1_harsh": 20
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 37,
+     "top1_harsh": 14
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 5,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 42,
+     "top1_harsh": 24
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 39,
+     "top1_harsh": 21
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 70,
+     "lost": 0,
+     "p": 1.6940658945086007e-21
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 9,
+     "lost": 0,
+     "p": 0.00390625
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 50,
+     "lost": 0,
+     "p": 1.7763568394002505e-15
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 60,
+     "lost": 0,
+     "p": 1.734723475976807e-18
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 54,
+     "lost": 0,
+     "p": 1.1102230246251565e-16
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 58,
+     "lost": 0,
+     "p": 6.938893903907228e-18
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 1,
+     "lost": 26,
+     "p": 4.172325134277344e-07
+    }
+   }
+  },
+  "jev-score-batch": {
+   "label": "Jev, 4-level rubric, 30 pages in one call",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.27051670799999983
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 19.5
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 19,
+     "top5_lenient": 20,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 11.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 9,
+     "top5_lenient": 9,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 16.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 37,
+     "top5_lenient": 38,
+     "top1_harsh": 3,
+     "top1_lenient": 3,
+     "median_rank_harsh": 8.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 31,
+     "top5_lenient": 31,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 9.5
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 29.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 16,
+     "top5_lenient": 16,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 22.5
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 2,
+     "top5_lenient": 2,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 29.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 7,
+     "top1_harsh": 1
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 16,
+     "top1_harsh": 1
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 12,
+     "top1_harsh": 0
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 21,
+     "top1_harsh": 2
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 37,
+     "lost": 0,
+     "p": 1.4551915228366852e-11
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 0,
+     "lost": 18,
+     "p": 7.62939453125e-06
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 31,
+     "lost": 0,
+     "p": 9.313225746154785e-10
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 16,
+     "lost": 0,
+     "p": 3.0517578125e-05
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 2,
+     "lost": 0,
+     "p": 0.5
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 0,
+     "lost": 19,
+     "p": 3.814697265625e-06
+    }
+   }
+  },
+  "jev-choice": {
+   "label": "Jev, one pick among 30",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.20071270799999996
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 2,
+     "top5_lenient": 65,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 30.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 76,
+     "top5_lenient": 94,
+     "top1_harsh": 9,
+     "top1_lenient": 10,
+     "median_rank_harsh": 3.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 30,
+     "top5_lenient": 78,
+     "top1_harsh": 3,
+     "top1_lenient": 3,
+     "median_rank_harsh": 30.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 85,
+     "top5_lenient": 92,
+     "top1_harsh": 18,
+     "top1_lenient": 18,
+     "median_rank_harsh": 2.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 47,
+     "top5_lenient": 85,
+     "top1_harsh": 9,
+     "top1_lenient": 9,
+     "median_rank_harsh": 6.5
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 3,
+     "top5_lenient": 63,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 67,
+     "top5_lenient": 90,
+     "top1_harsh": 3,
+     "top1_lenient": 3,
+     "median_rank_harsh": 4.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 76,
+     "top5_lenient": 89,
+     "top1_harsh": 12,
+     "top1_lenient": 13,
+     "median_rank_harsh": 3.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 27,
+     "top5_lenient": 76,
+     "top1_harsh": 2,
+     "top1_lenient": 2,
+     "median_rank_harsh": 30.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 2,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 39,
+     "top1_harsh": 6
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 41,
+     "top1_harsh": 9
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 37,
+     "top1_harsh": 3
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 44,
+     "top1_harsh": 9
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 83,
+     "lost": 0,
+     "p": 2.0679515313825692e-25
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 3,
+     "lost": 12,
+     "p": 0.03515625
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 45,
+     "lost": 0,
+     "p": 5.684341886080802e-14
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 64,
+     "lost": 0,
+     "p": 1.0842021724855044e-19
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 73,
+     "lost": 0,
+     "p": 2.117582368135751e-22
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 25,
+     "lost": 1,
+     "p": 8.046627044677734e-07
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 5,
+     "lost": 14,
+     "p": 0.063568115234375
+    }
+   }
+  },
+  "deepseek-json": {
+   "label": "DeepSeek V4.1 Flash chatbot, 30 pages in one call",
+   "notes": {
+    "missing": [
+     "related/scifact/51",
+     "related/scifact/142",
+     "related/scifact/354",
+     "related/scifact/540",
+     "related/scifact/637",
+     "related/scifact/692",
+     "related/scifact/693",
+     "related/scifact/723",
+     "related/scifact/847",
+     "related/scifact/882",
+     "related/scifact/967",
+     "related/scifact/1180",
+     "related/scifact/1207",
+     "related/fiqa/721",
+     "related/fiqa/1297",
+     "related/fiqa/1441",
+     "related/fiqa/2891",
+     "related/fiqa/3254",
+     "related/fiqa/4153",
+     "related/fiqa/4681",
+     "related/fiqa/5951",
+     "related/fiqa/5993",
+     "related/fiqa/6441",
+     "related/fiqa/7529",
+     "related/fiqa/10152",
+     "related/fiqa/10710",
+     "related/nq/test1149",
+     "related/nq/test170",
+     "related/nq/test2296",
+     "related/nq/test2946",
+     "related/nq/test3197",
+     "related/nq/test324",
+     "related/nq/test3254",
+     "related/nq/test3308",
+     "related/nq/test3439",
+     "related/nq/test585",
+     "related/nq/test650",
+     "related/nq/test883",
+     "related/nq/test895",
+     "related/nfcorpus/PLAIN-143",
+     "related/nfcorpus/PLAIN-1635",
+     "related/nfcorpus/PLAIN-1857",
+     "related/nfcorpus/PLAIN-1995",
+     "related/nfcorpus/PLAIN-2490",
+     "related/nfcorpus/PLAIN-2510",
+     "related/nfcorpus/PLAIN-2600",
+     "related/nfcorpus/PLAIN-2710",
+     "related/nfcorpus/PLAIN-2720",
+     "related/nfcorpus/PLAIN-2750",
+     "related/nfcorpus/PLAIN-2960",
+     "related/nfcorpus/PLAIN-613",
+     "related/nfcorpus/PLAIN-660",
+     "related/trec-covid/10",
+     "related/trec-covid/15",
+     "related/trec-covid/16",
+     "related/trec-covid/17",
+     "related/trec-covid/22",
+     "related/trec-covid/26",
+     "related/trec-covid/33",
+     "related/trec-covid/35",
+     "related/trec-covid/38",
+     "related/trec-covid/43",
+     "related/trec-covid/46",
+     "related/trec-covid/7",
+     "related/bright-biology/1",
+     "related/bright-biology/10",
+     "related/bright-biology/19",
+     "related/bright-biology/3",
+     "related/bright-biology/4",
+     "related/bright-biology/58",
+     "related/bright-biology/66",
+     "related/bright-biology/7",
+     "related/bright-biology/70",
+     "related/bright-biology/72",
+     "related/bright-biology/84",
+     "related/bright-biology/94",
+     "related/bright-economics/17",
+     "related/bright-economics/19",
+     "related/bright-economics/26",
+     "related/bright-economics/39",
+     "related/bright-economics/56",
+     "related/bright-economics/65",
+     "related/bright-economics/70",
+     "related/bright-economics/74",
+     "related/bright-economics/78",
+     "related/bright-economics/89",
+     "related/bright-economics/92",
+     "related/bright-economics/93",
+     "related/csn-python/1",
+     "related/csn-python/134",
+     "related/csn-python/270",
+     "related/csn-python/287",
+     "related/csn-python/366",
+     "related/csn-python/508",
+     "related/csn-python/657",
+     "related/csn-python/661",
+     "related/csn-python/689",
+     "related/csn-python/799",
+     "related/csn-python/840",
+     "related/csn-python/97",
+     "offtopic/scifact/51",
+     "offtopic/scifact/142",
+     "offtopic/scifact/354",
+     "offtopic/scifact/540",
+     "offtopic/scifact/637",
+     "offtopic/scifact/692",
+     "offtopic/scifact/693",
+     "offtopic/scifact/723",
+     "offtopic/scifact/847",
+     "offtopic/scifact/882",
+     "offtopic/scifact/967",
+     "offtopic/scifact/1180",
+     "offtopic/scifact/1207",
+     "offtopic/fiqa/721",
+     "offtopic/fiqa/1297",
+     "offtopic/fiqa/1441",
+     "offtopic/fiqa/2891",
+     "offtopic/fiqa/3254",
+     "offtopic/fiqa/4153",
+     "offtopic/fiqa/4681",
+     "offtopic/fiqa/5951",
+     "offtopic/fiqa/5993",
+     "offtopic/fiqa/6441",
+     "offtopic/fiqa/7529",
+     "offtopic/fiqa/10152",
+     "offtopic/fiqa/10710",
+     "offtopic/nq/test1149",
+     "offtopic/nq/test170",
+     "offtopic/nq/test2296",
+     "offtopic/nq/test2946",
+     "offtopic/nq/test3197",
+     "offtopic/nq/test324",
+     "offtopic/nq/test3254",
+     "offtopic/nq/test3308",
+     "offtopic/nq/test3439",
+     "offtopic/nq/test585",
+     "offtopic/nq/test650",
+     "offtopic/nq/test883",
+     "offtopic/nq/test895",
+     "offtopic/nfcorpus/PLAIN-143",
+     "offtopic/nfcorpus/PLAIN-1635",
+     "offtopic/nfcorpus/PLAIN-1857",
+     "offtopic/nfcorpus/PLAIN-1995",
+     "offtopic/nfcorpus/PLAIN-2490",
+     "offtopic/nfcorpus/PLAIN-2510",
+     "offtopic/nfcorpus/PLAIN-2600",
+     "offtopic/nfcorpus/PLAIN-2710",
+     "offtopic/nfcorpus/PLAIN-2720",
+     "offtopic/nfcorpus/PLAIN-2750",
+     "offtopic/nfcorpus/PLAIN-2960",
+     "offtopic/nfcorpus/PLAIN-613",
+     "offtopic/nfcorpus/PLAIN-660",
+     "offtopic/trec-covid/10",
+     "offtopic/trec-covid/15",
+     "offtopic/trec-covid/16",
+     "offtopic/trec-covid/17",
+     "offtopic/trec-covid/22",
+     "offtopic/trec-covid/26",
+     "offtopic/trec-covid/33",
+     "offtopic/trec-covid/35",
+     "offtopic/trec-covid/38",
+     "offtopic/trec-covid/43",
+     "offtopic/trec-covid/46",
+     "offtopic/trec-covid/7",
+     "offtopic/bright-biology/1",
+     "offtopic/bright-biology/10",
+     "offtopic/bright-biology/19",
+     "offtopic/bright-biology/3",
+     "offtopic/bright-biology/4",
+     "offtopic/bright-biology/58",
+     "offtopic/bright-biology/66",
+     "offtopic/bright-biology/7",
+     "offtopic/bright-biology/70",
+     "offtopic/bright-biology/72",
+     "offtopic/bright-biology/84",
+     "offtopic/bright-biology/94",
+     "offtopic/bright-economics/17",
+     "offtopic/bright-economics/19",
+     "offtopic/bright-economics/26",
+     "offtopic/bright-economics/39",
+     "offtopic/bright-economics/56",
+     "offtopic/bright-economics/65",
+     "offtopic/bright-economics/70",
+     "offtopic/bright-economics/74",
+     "offtopic/bright-economics/78",
+     "offtopic/bright-economics/89",
+     "offtopic/bright-economics/92",
+     "offtopic/bright-economics/93",
+     "offtopic/csn-python/1",
+     "offtopic/csn-python/134",
+     "offtopic/csn-python/270",
+     "offtopic/csn-python/287",
+     "offtopic/csn-python/366",
+     "offtopic/csn-python/508",
+     "offtopic/csn-python/657",
+     "offtopic/csn-python/661",
+     "offtopic/csn-python/689",
+     "offtopic/csn-python/799",
+     "offtopic/csn-python/840",
+     "offtopic/csn-python/97",
+     "offecho/scifact/51",
+     "offecho/scifact/142",
+     "offecho/scifact/354",
+     "offecho/scifact/540",
+     "offecho/scifact/637",
+     "offecho/scifact/692",
+     "offecho/scifact/693",
+     "offecho/scifact/723",
+     "offecho/scifact/847",
+     "offecho/scifact/882",
+     "offecho/scifact/967",
+     "offecho/scifact/1180",
+     "offecho/scifact/1207",
+     "offecho/fiqa/721",
+     "offecho/fiqa/1297",
+     "offecho/fiqa/1441",
+     "offecho/fiqa/2891",
+     "offecho/fiqa/3254",
+     "offecho/fiqa/4153",
+     "offecho/fiqa/4681",
+     "offecho/fiqa/5951",
+     "offecho/fiqa/5993",
+     "offecho/fiqa/6441",
+     "offecho/fiqa/7529",
+     "offecho/fiqa/10152",
+     "offecho/fiqa/10710",
+     "offecho/nq/test1149",
+     "offecho/nq/test170",
+     "offecho/nq/test2296",
+     "offecho/nq/test2946",
+     "offecho/nq/test3197",
+     "offecho/nq/test324",
+     "offecho/nq/test3254",
+     "offecho/nq/test3308",
+     "offecho/nq/test3439",
+     "offecho/nq/test585",
+     "offecho/nq/test650",
+     "offecho/nq/test883",
+     "offecho/nq/test895",
+     "offecho/nfcorpus/PLAIN-143",
+     "offecho/nfcorpus/PLAIN-1635",
+     "offecho/nfcorpus/PLAIN-1857",
+     "offecho/nfcorpus/PLAIN-1995",
+     "offecho/nfcorpus/PLAIN-2490",
+     "offecho/nfcorpus/PLAIN-2510",
+     "offecho/nfcorpus/PLAIN-2600",
+     "offecho/nfcorpus/PLAIN-2710",
+     "offecho/nfcorpus/PLAIN-2720",
+     "offecho/nfcorpus/PLAIN-2750",
+     "offecho/nfcorpus/PLAIN-2960",
+     "offecho/nfcorpus/PLAIN-613",
+     "offecho/nfcorpus/PLAIN-660",
+     "offecho/trec-covid/10",
+     "offecho/trec-covid/15",
+     "offecho/trec-covid/16",
+     "offecho/trec-covid/17",
+     "offecho/trec-covid/22",
+     "offecho/trec-covid/26",
+     "offecho/trec-covid/33",
+     "offecho/trec-covid/35",
+     "offecho/trec-covid/38",
+     "offecho/trec-covid/43",
+     "offecho/trec-covid/46",
+     "offecho/trec-covid/7",
+     "offecho/bright-biology/1",
+     "offecho/bright-biology/10",
+     "offecho/bright-biology/19",
+     "offecho/bright-biology/3",
+     "offecho/bright-biology/4",
+     "offecho/bright-biology/58",
+     "offecho/bright-biology/66",
+     "offecho/bright-biology/7",
+     "offecho/bright-biology/70",
+     "offecho/bright-biology/72",
+     "offecho/bright-biology/84",
+     "offecho/bright-biology/94",
+     "offecho/bright-economics/17",
+     "offecho/bright-economics/19",
+     "offecho/bright-economics/26",
+     "offecho/bright-economics/39",
+     "offecho/bright-economics/56",
+     "offecho/bright-economics/65",
+     "offecho/bright-economics/70",
+     "offecho/bright-economics/74",
+     "offecho/bright-economics/78",
+     "offecho/bright-economics/89",
+     "offecho/bright-economics/92",
+     "offecho/bright-economics/93",
+     "offecho/csn-python/1",
+     "offecho/csn-python/134",
+     "offecho/csn-python/270",
+     "offecho/csn-python/287",
+     "offecho/csn-python/366",
+     "offecho/csn-python/508",
+     "offecho/csn-python/657",
+     "offecho/csn-python/661",
+     "offecho/csn-python/689",
+     "offecho/csn-python/799",
+     "offecho/csn-python/840",
+     "offecho/csn-python/97",
+     "offpara/scifact/51",
+     "offpara/scifact/142",
+     "offpara/scifact/354",
+     "offpara/scifact/540",
+     "offpara/scifact/637",
+     "offpara/scifact/692",
+     "offpara/scifact/693",
+     "offpara/scifact/723",
+     "offpara/scifact/847",
+     "offpara/scifact/882",
+     "offpara/scifact/967",
+     "offpara/scifact/1180",
+     "offpara/scifact/1207",
+     "offpara/fiqa/721",
+     "offpara/fiqa/1297",
+     "offpara/fiqa/1441",
+     "offpara/fiqa/2891",
+     "offpara/fiqa/3254",
+     "offpara/fiqa/4153",
+     "offpara/fiqa/4681",
+     "offpara/fiqa/5951",
+     "offpara/fiqa/5993",
+     "offpara/fiqa/6441",
+     "offpara/fiqa/7529",
+     "offpara/fiqa/10152",
+     "offpara/fiqa/10710",
+     "offpara/nq/test1149",
+     "offpara/nq/test170",
+     "offpara/nq/test2296",
+     "offpara/nq/test2946",
+     "offpara/nq/test3197",
+     "offpara/nq/test324",
+     "offpara/nq/test3254",
+     "offpara/nq/test3308",
+     "offpara/nq/test3439",
+     "offpara/nq/test585",
+     "offpara/nq/test650",
+     "offpara/nq/test883",
+     "offpara/nq/test895",
+     "offpara/nfcorpus/PLAIN-143",
+     "offpara/nfcorpus/PLAIN-1635",
+     "offpara/nfcorpus/PLAIN-1857",
+     "offpara/nfcorpus/PLAIN-1995",
+     "offpara/nfcorpus/PLAIN-2490",
+     "offpara/nfcorpus/PLAIN-2510",
+     "offpara/nfcorpus/PLAIN-2600",
+     "offpara/nfcorpus/PLAIN-2710",
+     "offpara/nfcorpus/PLAIN-2720",
+     "offpara/nfcorpus/PLAIN-2750",
+     "offpara/nfcorpus/PLAIN-2960",
+     "offpara/nfcorpus/PLAIN-613",
+     "offpara/nfcorpus/PLAIN-660",
+     "offpara/trec-covid/10",
+     "offpara/trec-covid/15",
+     "offpara/trec-covid/16",
+     "offpara/trec-covid/17",
+     "offpara/trec-covid/22",
+     "offpara/trec-covid/26",
+     "offpara/trec-covid/33",
+     "offpara/trec-covid/35",
+     "offpara/trec-covid/38",
+     "offpara/trec-covid/43",
+     "offpara/trec-covid/46",
+     "offpara/trec-covid/7",
+     "offpara/bright-biology/1",
+     "offpara/bright-biology/10",
+     "offpara/bright-biology/19",
+     "offpara/bright-biology/3",
+     "offpara/bright-biology/4",
+     "offpara/bright-biology/58",
+     "offpara/bright-biology/66",
+     "offpara/bright-biology/7",
+     "offpara/bright-biology/70",
+     "offpara/bright-biology/72",
+     "offpara/bright-biology/84",
+     "offpara/bright-biology/94",
+     "offpara/bright-economics/17",
+     "offpara/bright-economics/19",
+     "offpara/bright-economics/26",
+     "offpara/bright-economics/39",
+     "offpara/bright-economics/56",
+     "offpara/bright-economics/65",
+     "offpara/bright-economics/70",
+     "offpara/bright-economics/74",
+     "offpara/bright-economics/78",
+     "offpara/bright-economics/89",
+     "offpara/bright-economics/92",
+     "offpara/bright-economics/93",
+     "offpara/csn-python/1",
+     "offpara/csn-python/134",
+     "offpara/csn-python/270",
+     "offpara/csn-python/287",
+     "offpara/csn-python/366",
+     "offpara/csn-python/508",
+     "offpara/csn-python/657",
+     "offpara/csn-python/661",
+     "offpara/csn-python/689",
+     "offpara/csn-python/799",
+     "offpara/csn-python/840",
+     "offpara/csn-python/97",
+     "offstuff/scifact/51",
+     "offstuff/scifact/142",
+     "offstuff/scifact/354",
+     "offstuff/scifact/540",
+     "offstuff/scifact/637",
+     "offstuff/scifact/692",
+     "offstuff/scifact/693",
+     "offstuff/scifact/723",
+     "offstuff/scifact/847",
+     "offstuff/scifact/882",
+     "offstuff/scifact/967",
+     "offstuff/scifact/1180",
+     "offstuff/scifact/1207",
+     "offstuff/fiqa/721",
+     "offstuff/fiqa/1297",
+     "offstuff/fiqa/1441",
+     "offstuff/fiqa/2891",
+     "offstuff/fiqa/3254",
+     "offstuff/fiqa/4153",
+     "offstuff/fiqa/4681",
+     "offstuff/fiqa/5951",
+     "offstuff/fiqa/5993",
+     "offstuff/fiqa/6441",
+     "offstuff/fiqa/7529",
+     "offstuff/fiqa/10152",
+     "offstuff/fiqa/10710",
+     "offstuff/nq/test1149",
+     "offstuff/nq/test170",
+     "offstuff/nq/test2296",
+     "offstuff/nq/test2946",
+     "offstuff/nq/test3197",
+     "offstuff/nq/test324",
+     "offstuff/nq/test3254",
+     "offstuff/nq/test3308",
+     "offstuff/nq/test3439",
+     "offstuff/nq/test585",
+     "offstuff/nq/test650",
+     "offstuff/nq/test883",
+     "offstuff/nq/test895",
+     "offstuff/nfcorpus/PLAIN-143",
+     "offstuff/nfcorpus/PLAIN-1635",
+     "offstuff/nfcorpus/PLAIN-1857",
+     "offstuff/nfcorpus/PLAIN-1995",
+     "offstuff/nfcorpus/PLAIN-2490",
+     "offstuff/nfcorpus/PLAIN-2510",
+     "offstuff/nfcorpus/PLAIN-2600",
+     "offstuff/nfcorpus/PLAIN-2710",
+     "offstuff/nfcorpus/PLAIN-2720",
+     "offstuff/nfcorpus/PLAIN-2750",
+     "offstuff/nfcorpus/PLAIN-2960",
+     "offstuff/nfcorpus/PLAIN-613",
+     "offstuff/nfcorpus/PLAIN-660",
+     "offstuff/trec-covid/10",
+     "offstuff/trec-covid/15",
+     "offstuff/trec-covid/16",
+     "offstuff/trec-covid/17",
+     "offstuff/trec-covid/22",
+     "offstuff/trec-covid/26",
+     "offstuff/trec-covid/33",
+     "offstuff/trec-covid/35",
+     "offstuff/trec-covid/38",
+     "offstuff/trec-covid/43",
+     "offstuff/trec-covid/46",
+     "offstuff/trec-covid/7",
+     "offstuff/bright-biology/1",
+     "offstuff/bright-biology/10",
+     "offstuff/bright-biology/19",
+     "offstuff/bright-biology/3",
+     "offstuff/bright-biology/4",
+     "offstuff/bright-biology/58",
+     "offstuff/bright-biology/66",
+     "offstuff/bright-biology/7",
+     "offstuff/bright-biology/70",
+     "offstuff/bright-biology/72",
+     "offstuff/bright-biology/84",
+     "offstuff/bright-biology/94",
+     "offstuff/bright-economics/17",
+     "offstuff/bright-economics/19",
+     "offstuff/bright-economics/26",
+     "offstuff/bright-economics/39",
+     "offstuff/bright-economics/56",
+     "offstuff/bright-economics/65",
+     "offstuff/bright-economics/70",
+     "offstuff/bright-economics/74",
+     "offstuff/bright-economics/78",
+     "offstuff/bright-economics/89",
+     "offstuff/bright-economics/92",
+     "offstuff/bright-economics/93",
+     "offstuff/csn-python/1",
+     "offstuff/csn-python/134",
+     "offstuff/csn-python/270",
+     "offstuff/csn-python/287",
+     "offstuff/csn-python/366",
+     "offstuff/csn-python/508",
+     "offstuff/csn-python/657",
+     "offstuff/csn-python/661",
+     "offstuff/csn-python/689",
+     "offstuff/csn-python/799",
+     "offstuff/csn-python/840",
+     "offstuff/csn-python/97"
+    ],
+    "cost_usd": 0.04520672400000003
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 40,
+     "top1_harsh": 0,
+     "top1_lenient": 6,
+     "median_rank_harsh": 30.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 17,
+     "top5_lenient": 54,
+     "top1_harsh": 5,
+     "top1_lenient": 11,
+     "median_rank_harsh": 30.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 5,
+     "top5_lenient": 43,
+     "top1_harsh": 2,
+     "top1_lenient": 5,
+     "median_rank_harsh": 30.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 53,
+     "top5_lenient": 68,
+     "top1_harsh": 15,
+     "top1_lenient": 22,
+     "median_rank_harsh": 5.0
+    },
+    "related": {
+     "n": 0,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": null
+    },
+    "offtopic": {
+     "n": 0,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": null
+    },
+    "offecho": {
+     "n": 0,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": null
+    },
+    "offpara": {
+     "n": 0,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": null
+    },
+    "offstuff": {
+     "n": 0,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": null
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 10,
+     "top1_harsh": 4
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 27,
+     "top1_harsh": 7
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 7,
+     "top1_harsh": 1
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 26,
+     "top1_harsh": 8
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 53,
+     "lost": 0,
+     "p": 2.220446049250313e-16
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 4,
+     "lost": 40,
+     "p": 1.7051434042514302e-08
+    },
+    "clean->related": {
+     "n": 0,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    },
+    "offtopic->offecho": {
+     "n": 0,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    },
+    "offtopic->offpara": {
+     "n": 0,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    },
+    "offtopic->offstuff": {
+     "n": 0,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    },
+    "echo->offecho": {
+     "n": 0,
+     "gained": 0,
+     "lost": 0,
+     "p": 1.0
+    }
+   }
+  },
+  "jev-noul-pair": {
+   "label": "Jev, yes/no per page",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.015523200000000008
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 1,
+     "top5_lenient": 7,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 24.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 35,
+     "top5_lenient": 39,
+     "top1_harsh": 4,
+     "top1_lenient": 5,
+     "median_rank_harsh": 8.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 17,
+     "top5_lenient": 21,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 16.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 48,
+     "top5_lenient": 50,
+     "top1_harsh": 13,
+     "top1_lenient": 13,
+     "median_rank_harsh": 6.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 33,
+     "top5_lenient": 35,
+     "top1_harsh": 2,
+     "top1_lenient": 3,
+     "median_rank_harsh": 9.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 19,
+     "top5_lenient": 21,
+     "top1_harsh": 3,
+     "top1_lenient": 5,
+     "median_rank_harsh": 20.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 29,
+     "top5_lenient": 33,
+     "top1_harsh": 12,
+     "top1_lenient": 13,
+     "median_rank_harsh": 10.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 14,
+     "top5_lenient": 17,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 28.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 1,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 15,
+     "top1_harsh": 3
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 24,
+     "top1_harsh": 6
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 0,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 20,
+     "top1_harsh": 1
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 24,
+     "top1_harsh": 7
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 47,
+     "lost": 0,
+     "p": 1.4210854715202004e-14
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 2,
+     "lost": 15,
+     "p": 0.002349853515625
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 33,
+     "lost": 1,
+     "p": 4.0745362639427185e-09
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 19,
+     "lost": 0,
+     "p": 3.814697265625e-06
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 29,
+     "lost": 0,
+     "p": 3.725290298461914e-09
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 14,
+     "lost": 0,
+     "p": 0.0001220703125
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 0,
+     "lost": 16,
+     "p": 3.0517578125e-05
+    }
+   }
+  },
+  "open-jev-9b-noul-pair": {
+   "label": "Open-Jev 9B, yes/no per page (self-hosted)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.04057729530490597
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 12,
+     "top5_lenient": 12,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 19.5
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 50,
+     "top5_lenient": 50,
+     "top1_harsh": 21,
+     "top1_lenient": 21,
+     "median_rank_harsh": 5.5
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 32,
+     "top5_lenient": 32,
+     "top1_harsh": 9,
+     "top1_lenient": 9,
+     "median_rank_harsh": 9.5
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 55,
+     "top5_lenient": 55,
+     "top1_harsh": 20,
+     "top1_lenient": 20,
+     "median_rank_harsh": 5.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 46,
+     "top5_lenient": 46,
+     "top1_harsh": 11,
+     "top1_lenient": 11,
+     "median_rank_harsh": 7.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 28,
+     "top5_lenient": 28,
+     "top1_harsh": 14,
+     "top1_lenient": 14,
+     "median_rank_harsh": 19.5
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 33,
+     "top5_lenient": 33,
+     "top1_harsh": 17,
+     "top1_lenient": 17,
+     "median_rank_harsh": 13.5
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 12,
+     "top5_lenient": 12,
+     "top1_harsh": 5,
+     "top1_lenient": 5,
+     "median_rank_harsh": 28.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 4,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 20,
+     "top1_harsh": 9
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 24,
+     "top1_harsh": 7
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 8,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 30,
+     "top1_harsh": 12
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 31,
+     "top1_harsh": 13
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 43,
+     "lost": 0,
+     "p": 2.2737367544323206e-13
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 5,
+     "lost": 10,
+     "p": 0.3017578125
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 37,
+     "lost": 3,
+     "p": 1.946500560734421e-08
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 28,
+     "lost": 0,
+     "p": 7.450580596923828e-09
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 33,
+     "lost": 0,
+     "p": 2.3283064365386963e-10
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 12,
+     "lost": 0,
+     "p": 0.00048828125
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 3,
+     "lost": 25,
+     "p": 2.744048833847046e-05
+    }
+   }
+  },
+  "open-jev-2b-noul-pair": {
+   "label": "Open-Jev 2B, yes/no per page (self-hosted)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.05222190605448562
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 8,
+     "top5_lenient": 8,
+     "top1_harsh": 2,
+     "top1_lenient": 2,
+     "median_rank_harsh": 18.5
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 52,
+     "top5_lenient": 52,
+     "top1_harsh": 26,
+     "top1_lenient": 26,
+     "median_rank_harsh": 5.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 36,
+     "top5_lenient": 36,
+     "top1_harsh": 13,
+     "top1_lenient": 13,
+     "median_rank_harsh": 7.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 51,
+     "top5_lenient": 51,
+     "top1_harsh": 20,
+     "top1_lenient": 20,
+     "median_rank_harsh": 5.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 30,
+     "top5_lenient": 30,
+     "top1_harsh": 10,
+     "top1_lenient": 10,
+     "median_rank_harsh": 10.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 4,
+     "top5_lenient": 4,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 29.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 29,
+     "top5_lenient": 29,
+     "top1_harsh": 18,
+     "top1_lenient": 18,
+     "median_rank_harsh": 13.0
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 36,
+     "top5_lenient": 36,
+     "top1_harsh": 21,
+     "top1_lenient": 21,
+     "median_rank_harsh": 13.5
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 19,
+     "top5_lenient": 19,
+     "top1_harsh": 7,
+     "top1_lenient": 7,
+     "median_rank_harsh": 22.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 2,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 25,
+     "top1_harsh": 13
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 21,
+     "top1_harsh": 7
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 6,
+     "top1_harsh": 1
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 27,
+     "top1_harsh": 13
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 30,
+     "top1_harsh": 13
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 44,
+     "lost": 1,
+     "p": 2.6147972675971687e-12
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 6,
+     "lost": 5,
+     "p": 1.0
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 25,
+     "lost": 3,
+     "p": 2.744048833847046e-05
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 25,
+     "lost": 0,
+     "p": 5.960464477539063e-08
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 32,
+     "lost": 0,
+     "p": 4.656612873077393e-10
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 16,
+     "lost": 1,
+     "p": 0.000274658203125
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 5,
+     "lost": 28,
+     "p": 6.618769839406013e-05
+    }
+   }
+  },
+  "tev1-4b-pair": {
+   "label": "Together tev1-4B, per page (self-hosted)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.006608385489084234
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 7,
+     "top5_lenient": 7,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 21.5
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 39,
+     "top5_lenient": 39,
+     "top1_harsh": 11,
+     "top1_lenient": 11,
+     "median_rank_harsh": 7.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 20,
+     "top5_lenient": 20,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 17.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 46,
+     "top5_lenient": 46,
+     "top1_harsh": 15,
+     "top1_lenient": 15,
+     "median_rank_harsh": 6.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 27,
+     "top5_lenient": 27,
+     "top1_harsh": 3,
+     "top1_lenient": 3,
+     "median_rank_harsh": 10.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 3,
+     "top5_lenient": 3,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 26,
+     "top5_lenient": 26,
+     "top1_harsh": 10,
+     "top1_lenient": 10,
+     "median_rank_harsh": 11.5
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 35,
+     "top5_lenient": 35,
+     "top1_harsh": 13,
+     "top1_lenient": 13,
+     "median_rank_harsh": 9.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 12,
+     "top5_lenient": 12,
+     "top1_harsh": 3,
+     "top1_lenient": 3,
+     "median_rank_harsh": 22.5
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 4,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 16,
+     "top1_harsh": 4
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 20,
+     "top1_harsh": 5
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 3,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 23,
+     "top1_harsh": 7
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 26,
+     "top1_harsh": 10
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 39,
+     "lost": 0,
+     "p": 3.637978807091713e-12
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 0,
+     "lost": 7,
+     "p": 0.015625
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 22,
+     "lost": 2,
+     "p": 3.5881996154785156e-05
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 23,
+     "lost": 0,
+     "p": 2.384185791015625e-07
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 32,
+     "lost": 0,
+     "p": 4.656612873077393e-10
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 9,
+     "lost": 0,
+     "p": 0.00390625
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 6,
+     "lost": 19,
+     "p": 0.01463329792022705
+    }
+   }
+  },
+  "qwen35-4b-yesno-pair": {
+   "label": "Plain Qwen3.5-4B, yes/no per page (self-hosted)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.011261438896776079
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 6,
+     "top5_lenient": 6,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 19.5
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 34,
+     "top5_lenient": 34,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 9.0
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 12,
+     "top5_lenient": 12,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 16.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 35,
+     "top5_lenient": 35,
+     "top1_harsh": 4,
+     "top1_lenient": 4,
+     "median_rank_harsh": 9.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 19,
+     "top5_lenient": 19,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 12.0
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 0,
+     "top5_lenient": 0,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 30.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 17,
+     "top5_lenient": 17,
+     "top1_harsh": 1,
+     "top1_lenient": 1,
+     "median_rank_harsh": 19.5
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 22,
+     "top5_lenient": 22,
+     "top1_harsh": 4,
+     "top1_lenient": 4,
+     "median_rank_harsh": 20.5
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 8,
+     "top5_lenient": 8,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 28.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 3,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 15,
+     "top1_harsh": 1
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 13,
+     "top1_harsh": 2
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 3,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 19,
+     "top1_harsh": 0
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 22,
+     "top1_harsh": 2
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 30,
+     "lost": 1,
+     "p": 2.9802322387695312e-08
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 5,
+     "lost": 6,
+     "p": 1.0
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 15,
+     "lost": 2,
+     "p": 0.002349853515625
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 17,
+     "lost": 0,
+     "p": 1.52587890625e-05
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 22,
+     "lost": 0,
+     "p": 4.76837158203125e-07
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 8,
+     "lost": 0,
+     "p": 0.0078125
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 1,
+     "lost": 18,
+     "p": 7.62939453125e-05
+    }
+   }
+  },
+  "laya-score-pair": {
+   "label": "Laya 421M, 4-level rubric per page (self-hosted)",
+   "notes": {
+    "missing": [],
+    "cost_usd": 0.0031334522412262023
+   },
+   "kinds": {
+    "clean": {
+     "n": 100,
+     "top5_harsh": 6,
+     "top5_lenient": 7,
+     "top1_harsh": 0,
+     "top1_lenient": 1,
+     "median_rank_harsh": 20.0
+    },
+    "echo": {
+     "n": 100,
+     "top5_harsh": 50,
+     "top5_lenient": 50,
+     "top1_harsh": 23,
+     "top1_lenient": 23,
+     "median_rank_harsh": 5.5
+    },
+    "stuff": {
+     "n": 100,
+     "top5_harsh": 55,
+     "top5_lenient": 55,
+     "top1_harsh": 26,
+     "top1_lenient": 26,
+     "median_rank_harsh": 5.0
+    },
+    "para": {
+     "n": 100,
+     "top5_harsh": 65,
+     "top5_lenient": 65,
+     "top1_harsh": 37,
+     "top1_lenient": 37,
+     "median_rank_harsh": 3.0
+    },
+    "related": {
+     "n": 100,
+     "top5_harsh": 35,
+     "top5_lenient": 35,
+     "top1_harsh": 14,
+     "top1_lenient": 14,
+     "median_rank_harsh": 9.5
+    },
+    "offtopic": {
+     "n": 100,
+     "top5_harsh": 1,
+     "top5_lenient": 1,
+     "top1_harsh": 0,
+     "top1_lenient": 0,
+     "median_rank_harsh": 28.0
+    },
+    "offecho": {
+     "n": 100,
+     "top5_harsh": 34,
+     "top5_lenient": 34,
+     "top1_harsh": 15,
+     "top1_lenient": 15,
+     "median_rank_harsh": 10.5
+    },
+    "offpara": {
+     "n": 100,
+     "top5_harsh": 59,
+     "top5_lenient": 59,
+     "top1_harsh": 33,
+     "top1_lenient": 33,
+     "median_rank_harsh": 3.0
+    },
+    "offstuff": {
+     "n": 100,
+     "top5_harsh": 55,
+     "top5_lenient": 55,
+     "top1_harsh": 24,
+     "top1_lenient": 24,
+     "median_rank_harsh": 5.0
+    }
+   },
+   "para_low_overlap": {
+    "clean": {
+     "n": 55,
+     "top5_harsh": 4,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 55,
+     "top5_harsh": 24,
+     "top1_harsh": 12
+    },
+    "para": {
+     "n": 55,
+     "top5_harsh": 34,
+     "top1_harsh": 17
+    }
+   },
+   "para_high_overlap": {
+    "clean": {
+     "n": 45,
+     "top5_harsh": 2,
+     "top1_harsh": 0
+    },
+    "echo": {
+     "n": 45,
+     "top5_harsh": 26,
+     "top1_harsh": 11
+    },
+    "para": {
+     "n": 45,
+     "top5_harsh": 31,
+     "top1_harsh": 20
+    }
+   },
+   "tests_top5": {
+    "clean->para": {
+     "n": 100,
+     "gained": 59,
+     "lost": 0,
+     "p": 3.469446951953614e-18
+    },
+    "para->echo": {
+     "n": 100,
+     "gained": 4,
+     "lost": 19,
+     "p": 0.002599477767944336
+    },
+    "clean->related": {
+     "n": 100,
+     "gained": 30,
+     "lost": 1,
+     "p": 2.9802322387695312e-08
+    },
+    "offtopic->offecho": {
+     "n": 100,
+     "gained": 33,
+     "lost": 0,
+     "p": 2.3283064365386963e-10
+    },
+    "offtopic->offpara": {
+     "n": 100,
+     "gained": 58,
+     "lost": 0,
+     "p": 6.938893903907228e-18
+    },
+    "offtopic->offstuff": {
+     "n": 100,
+     "gained": 54,
+     "lost": 0,
+     "p": 1.1102230246251565e-16
+    },
+    "echo->offecho": {
+     "n": 100,
+     "gained": 2,
+     "lost": 18,
+     "p": 0.0004024505615234375
+    }
+   }
+  }
+ },
+ "cohere_pro_full_list_check": {
+  "n": 100,
+  "same_rank": 99,
+  "total_rank_difference": 1,
+  "top5_full": 71,
+  "top5_one_call": 71,
+  "top1_full": 23,
+  "top1_one_call": 23
+ }
+}

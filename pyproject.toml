@@ -1,0 +1,18 @@
+[project]
+name = "one-sentence-to-top-5"
+version = "0.1.0"
+description = "One sentence to the top 5: how easily a wrong page climbs an AI search ranking (100 real searches, 13 rankers)"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+    "bm25s>=0.2.7",
+    "PyStemmer>=2.2",
+    "huggingface-hub>=0.26",
+    "pyarrow>=17",
+    "numpy>=2.0",
+    "tqdm>=4.66",
+]
+
+[tool.uv]
+package = false

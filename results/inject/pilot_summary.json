@@ -1,0 +1,1341 @@
+{
+ "bm25-edit": {
+  "label": "Keyword search (BM25)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0,
+  "ndcg10_clean": 0.511,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 0,
+    "top10_harsh": 0,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 68,
+    "top1_lenient": 68,
+    "top3_harsh": 86,
+    "top5_harsh": 92,
+    "top5_lenient": 92,
+    "top10_harsh": 97,
+    "median_rank_harsh": 1.0,
+    "top1_harsh_95": [
+     0.583,
+     0.763
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 0,
+    "top10_harsh": 0,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 1,
+    "top5_lenient": 1,
+    "top10_harsh": 1,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 87,
+    "top1_lenient": 87,
+    "top3_harsh": 94,
+    "top5_harsh": 98,
+    "top5_lenient": 98,
+    "top10_harsh": 99,
+    "median_rank_harsh": 1.0,
+    "top1_harsh_95": [
+     0.79,
+     0.922
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 1,
+    "top5_lenient": 1,
+    "top10_harsh": 1,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "10/0/0/11/0",
+   "fiqa": "9/0/0/13/0",
+   "nq": "10/0/0/12/0",
+   "nfcorpus": "4/0/0/9/0",
+   "trec-covid": "11/0/1/11/1",
+   "bright-biology": "11/0/0/12/0",
+   "bright-economics": "8/0/0/11/0",
+   "csn-python": "5/0/0/8/0"
+  }
+ },
+ "zerank-2": {
+  "label": "zerank-2 (ZeroEntropy, hosted API)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.1313,
+  "ndcg10_clean": 0.723,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 3,
+    "top5_lenient": 3,
+    "top10_harsh": 19,
+    "median_rank_harsh": 20.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 11,
+    "top1_lenient": 11,
+    "top3_harsh": 44,
+    "top5_harsh": 58,
+    "top5_lenient": 58,
+    "top10_harsh": 77,
+    "median_rank_harsh": 4.5,
+    "top1_harsh_95": [
+     0.063,
+     0.186
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 2,
+    "top5_lenient": 3,
+    "top10_harsh": 16,
+    "median_rank_harsh": 22.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 2,
+    "top5_lenient": 2,
+    "top10_harsh": 11,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 6,
+    "top1_lenient": 6,
+    "top3_harsh": 28,
+    "top5_harsh": 47,
+    "top5_lenient": 47,
+    "top10_harsh": 70,
+    "median_rank_harsh": 6.0,
+    "top1_harsh_95": [
+     0.028,
+     0.125
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 2,
+    "top5_lenient": 2,
+    "top10_harsh": 17,
+    "median_rank_harsh": 21.5,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "1/0/0/1/0",
+   "fiqa": "1/0/0/0/0",
+   "nq": "1/0/0/0/0",
+   "nfcorpus": "2/0/0/2/0",
+   "trec-covid": "1/0/0/1/0",
+   "bright-biology": "1/0/0/0/0",
+   "bright-economics": "4/0/0/2/0",
+   "csn-python": "0/0/0/0/0"
+  }
+ },
+ "cohere-pro": {
+  "label": "Cohere Rerank 4 Pro",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 1.5,
+  "ndcg10_clean": 0.727,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 4,
+    "top5_lenient": 5,
+    "top10_harsh": 16,
+    "median_rank_harsh": 21.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 32,
+    "top1_lenient": 32,
+    "top3_harsh": 69,
+    "top5_harsh": 83,
+    "top5_lenient": 83,
+    "top10_harsh": 97,
+    "median_rank_harsh": 2.0,
+    "top1_harsh_95": [
+     0.237,
+     0.417
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 3,
+    "top5_lenient": 4,
+    "top10_harsh": 18,
+    "median_rank_harsh": 21.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 4,
+    "top5_lenient": 4,
+    "top10_harsh": 16,
+    "median_rank_harsh": 21.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 29,
+    "top1_lenient": 29,
+    "top3_harsh": 68,
+    "top5_harsh": 86,
+    "top5_lenient": 86,
+    "top10_harsh": 98,
+    "median_rank_harsh": 2.0,
+    "top1_harsh_95": [
+     0.21,
+     0.385
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 5,
+    "top5_lenient": 5,
+    "top10_harsh": 17,
+    "median_rank_harsh": 21.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "11/0/0/8/0",
+   "fiqa": "3/0/0/2/0",
+   "nq": "1/0/0/0/0",
+   "nfcorpus": "5/0/0/5/0",
+   "trec-covid": "2/0/0/4/0",
+   "bright-biology": "1/0/0/1/0",
+   "bright-economics": "7/0/0/7/0",
+   "csn-python": "2/0/0/2/0"
+  }
+ },
+ "cohere-fast": {
+  "label": "Cohere Rerank 4 Fast",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 1.2,
+  "ndcg10_clean": 0.722,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 6,
+    "top5_lenient": 7,
+    "top10_harsh": 20,
+    "median_rank_harsh": 20.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 44,
+    "top1_lenient": 44,
+    "top3_harsh": 68,
+    "top5_harsh": 85,
+    "top5_lenient": 85,
+    "top10_harsh": 93,
+    "median_rank_harsh": 2.0,
+    "top1_harsh_95": [
+     0.347,
+     0.538
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 2,
+    "top5_harsh": 6,
+    "top5_lenient": 6,
+    "top10_harsh": 20,
+    "median_rank_harsh": 20.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 5,
+    "top5_lenient": 5,
+    "top10_harsh": 18,
+    "median_rank_harsh": 20.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 35,
+    "top1_lenient": 35,
+    "top3_harsh": 64,
+    "top5_harsh": 83,
+    "top5_lenient": 83,
+    "top10_harsh": 94,
+    "median_rank_harsh": 2.0,
+    "top1_harsh_95": [
+     0.264,
+     0.447
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 1,
+    "top5_harsh": 7,
+    "top5_lenient": 7,
+    "top10_harsh": 21,
+    "median_rank_harsh": 19.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "11/0/0/7/0",
+   "fiqa": "6/0/0/4/0",
+   "nq": "3/0/0/3/0",
+   "nfcorpus": "4/0/0/4/0",
+   "trec-covid": "3/0/0/3/0",
+   "bright-biology": "3/0/0/1/0",
+   "bright-economics": "10/1/1/9/1",
+   "csn-python": "4/0/0/4/0"
+  }
+ },
+ "jev-score-batch": {
+  "label": "Jev, 4-level rubric, 30 pages in one call",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.2708,
+  "ndcg10_clean": 0.711,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 0,
+    "top10_harsh": 12,
+    "median_rank_harsh": 19.5,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 11,
+    "top5_harsh": 19,
+    "top5_lenient": 20,
+    "top10_harsh": 46,
+    "median_rank_harsh": 11.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 1,
+    "top5_lenient": 1,
+    "top10_harsh": 7,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 0,
+    "top10_harsh": 9,
+    "median_rank_harsh": 25.5,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 3,
+    "top5_harsh": 9,
+    "top5_lenient": 9,
+    "top10_harsh": 27,
+    "median_rank_harsh": 16.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 2,
+    "top5_lenient": 3,
+    "top10_harsh": 9,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "0/0/0/0/0",
+   "fiqa": "0/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "0/0/0/0/0",
+   "trec-covid": "0/0/0/0/0",
+   "bright-biology": "0/0/0/0/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "0/0/0/0/0"
+  }
+ },
+ "jev-choice": {
+  "label": "Jev, one pick among 30",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.201,
+  "ndcg10_clean": 0.682,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 2,
+    "top5_harsh": 2,
+    "top5_lenient": 65,
+    "top10_harsh": 4,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 9,
+    "top1_lenient": 10,
+    "top3_harsh": 58,
+    "top5_harsh": 76,
+    "top5_lenient": 94,
+    "top10_harsh": 81,
+    "median_rank_harsh": 3.0,
+    "top1_harsh_95": [
+     0.048,
+     0.162
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 4,
+    "top5_harsh": 6,
+    "top5_lenient": 65,
+    "top10_harsh": 8,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 7,
+    "top5_harsh": 11,
+    "top5_lenient": 69,
+    "top10_harsh": 13,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 3,
+    "top1_lenient": 3,
+    "top3_harsh": 21,
+    "top5_harsh": 30,
+    "top5_lenient": 78,
+    "top10_harsh": 34,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.01,
+     0.085
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 6,
+    "top5_harsh": 10,
+    "top5_lenient": 70,
+    "top10_harsh": 12,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "0/0/0/0/0",
+   "fiqa": "0/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "4/0/1/2/1",
+   "trec-covid": "3/1/1/1/1",
+   "bright-biology": "0/0/0/0/0",
+   "bright-economics": "2/0/0/0/0",
+   "csn-python": "0/0/0/0/0"
+  }
+ },
+ "deepseek-json": {
+  "label": "DeepSeek V4.1 Flash chatbot, 30 pages in one call",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.4558,
+  "ndcg10_clean": 0.694,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 6,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 40,
+    "top10_harsh": 3,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 5,
+    "top1_lenient": 11,
+    "top3_harsh": 12,
+    "top5_harsh": 17,
+    "top5_lenient": 54,
+    "top10_harsh": 24,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.022,
+     0.112
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 6,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 41,
+    "top10_harsh": 5,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 5,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 45,
+    "top10_harsh": 3,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 5,
+    "top3_harsh": 5,
+    "top5_harsh": 5,
+    "top5_lenient": 43,
+    "top10_harsh": 12,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 5,
+    "top3_harsh": 0,
+    "top5_harsh": 0,
+    "top5_lenient": 40,
+    "top10_harsh": 4,
+    "median_rank_harsh": 30.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "0/0/0/0/0",
+   "fiqa": "2/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "0/0/0/1/0",
+   "trec-covid": "2/0/0/0/0",
+   "bright-biology": "0/0/0/0/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "0/0/0/1/0"
+  }
+ },
+ "jev-noul-pair": {
+  "label": "Jev, yes/no per page",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0933,
+  "ndcg10_clean": 0.717,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 1,
+    "top5_lenient": 7,
+    "top10_harsh": 12,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 4,
+    "top1_lenient": 5,
+    "top3_harsh": 20,
+    "top5_harsh": 35,
+    "top5_lenient": 39,
+    "top10_harsh": 60,
+    "median_rank_harsh": 8.0,
+    "top1_harsh_95": [
+     0.016,
+     0.098
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 1,
+    "top5_lenient": 6,
+    "top10_harsh": 12,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 4,
+    "top5_lenient": 8,
+    "top10_harsh": 13,
+    "median_rank_harsh": 24.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 12,
+    "top5_harsh": 17,
+    "top5_lenient": 21,
+    "top10_harsh": 33,
+    "median_rank_harsh": 16.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 2,
+    "top5_lenient": 10,
+    "top10_harsh": 12,
+    "median_rank_harsh": 25.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "2/0/0/0/0",
+   "fiqa": "0/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "1/0/0/0/0",
+   "trec-covid": "0/0/0/0/0",
+   "bright-biology": "0/0/0/0/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "0/0/0/0/0"
+  }
+ },
+ "open-jev-9b-noul-pair": {
+  "label": "Open-Jev 9B, yes/no per page (self-hosted)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.1748,
+  "ndcg10_clean": 0.623,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 7,
+    "top5_harsh": 12,
+    "top5_lenient": 12,
+    "top10_harsh": 22,
+    "median_rank_harsh": 19.5,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 21,
+    "top1_lenient": 21,
+    "top3_harsh": 36,
+    "top5_harsh": 50,
+    "top5_lenient": 50,
+    "top10_harsh": 72,
+    "median_rank_harsh": 5.5,
+    "top1_harsh_95": [
+     0.142,
+     0.3
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 3,
+    "top5_harsh": 12,
+    "top5_lenient": 12,
+    "top10_harsh": 27,
+    "median_rank_harsh": 19.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 9,
+    "top5_harsh": 14,
+    "top5_lenient": 14,
+    "top10_harsh": 30,
+    "median_rank_harsh": 15.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 9,
+    "top1_lenient": 9,
+    "top3_harsh": 20,
+    "top5_harsh": 32,
+    "top5_lenient": 32,
+    "top10_harsh": 53,
+    "median_rank_harsh": 9.5,
+    "top1_harsh_95": [
+     0.048,
+     0.162
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 7,
+    "top5_harsh": 13,
+    "top5_lenient": 13,
+    "top10_harsh": 30,
+    "median_rank_harsh": 14.5,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "10/0/0/5/0",
+   "fiqa": "1/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "3/0/1/2/0",
+   "trec-covid": "1/0/0/0/0",
+   "bright-biology": "1/0/0/1/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "4/0/1/1/1"
+  }
+ },
+ "open-jev-2b-noul-pair": {
+  "label": "Open-Jev 2B, yes/no per page (self-hosted)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0976,
+  "ndcg10_clean": 0.585,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 3,
+    "top5_harsh": 8,
+    "top5_lenient": 8,
+    "top10_harsh": 21,
+    "median_rank_harsh": 18.5,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 26,
+    "top1_lenient": 26,
+    "top3_harsh": 36,
+    "top5_harsh": 52,
+    "top5_lenient": 52,
+    "top10_harsh": 73,
+    "median_rank_harsh": 5.0,
+    "top1_harsh_95": [
+     0.184,
+     0.354
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 2,
+    "top5_harsh": 4,
+    "top5_lenient": 4,
+    "top10_harsh": 24,
+    "median_rank_harsh": 18.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 4,
+    "top1_lenient": 4,
+    "top3_harsh": 5,
+    "top5_harsh": 13,
+    "top5_lenient": 13,
+    "top10_harsh": 26,
+    "median_rank_harsh": 17.0,
+    "top1_harsh_95": [
+     0.016,
+     0.098
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 13,
+    "top1_lenient": 13,
+    "top3_harsh": 22,
+    "top5_harsh": 36,
+    "top5_lenient": 36,
+    "top10_harsh": 63,
+    "median_rank_harsh": 7.0,
+    "top1_harsh_95": [
+     0.078,
+     0.21
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 2,
+    "top5_harsh": 4,
+    "top5_lenient": 4,
+    "top10_harsh": 24,
+    "median_rank_harsh": 17.0,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "11/0/0/5/0",
+   "fiqa": "6/0/1/2/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "2/0/0/1/0",
+   "trec-covid": "2/1/1/2/1",
+   "bright-biology": "1/0/0/2/0",
+   "bright-economics": "3/1/2/1/1",
+   "csn-python": "1/0/0/0/0"
+  }
+ },
+ "tev1-4b-pair": {
+  "label": "Together tev1-4B, per page (self-hosted)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0371,
+  "ndcg10_clean": 0.683,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 7,
+    "top5_lenient": 7,
+    "top10_harsh": 19,
+    "median_rank_harsh": 21.5,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 11,
+    "top1_lenient": 11,
+    "top3_harsh": 27,
+    "top5_harsh": 39,
+    "top5_lenient": 39,
+    "top10_harsh": 65,
+    "median_rank_harsh": 7.0,
+    "top1_harsh_95": [
+     0.063,
+     0.186
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 3,
+    "top5_harsh": 12,
+    "top5_lenient": 12,
+    "top10_harsh": 30,
+    "median_rank_harsh": 18.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 6,
+    "top5_harsh": 14,
+    "top5_lenient": 15,
+    "top10_harsh": 32,
+    "median_rank_harsh": 17.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 8,
+    "top5_harsh": 20,
+    "top5_lenient": 20,
+    "top10_harsh": 38,
+    "median_rank_harsh": 17.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 2,
+    "top5_harsh": 6,
+    "top5_lenient": 6,
+    "top10_harsh": 22,
+    "median_rank_harsh": 21.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "4/0/0/0/0",
+   "fiqa": "0/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "0/0/0/0/0",
+   "trec-covid": "1/0/0/0/0",
+   "bright-biology": "1/0/0/0/0",
+   "bright-economics": "3/0/0/0/0",
+   "csn-python": "2/0/0/1/0"
+  }
+ },
+ "qwen35-4b-yesno-pair": {
+  "label": "Plain Qwen3.5-4B, yes/no per page (self-hosted)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0402,
+  "ndcg10_clean": 0.669,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 6,
+    "top5_lenient": 6,
+    "top10_harsh": 18,
+    "median_rank_harsh": 19.5,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 15,
+    "top5_harsh": 34,
+    "top5_lenient": 34,
+    "top10_harsh": 55,
+    "median_rank_harsh": 9.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 6,
+    "top5_lenient": 6,
+    "top10_harsh": 24,
+    "median_rank_harsh": 18.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 8,
+    "top5_lenient": 8,
+    "top10_harsh": 33,
+    "median_rank_harsh": 14.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 5,
+    "top5_harsh": 12,
+    "top5_lenient": 12,
+    "top10_harsh": 29,
+    "median_rank_harsh": 16.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 1,
+    "top5_harsh": 9,
+    "top5_lenient": 9,
+    "top10_harsh": 28,
+    "median_rank_harsh": 16.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "0/0/0/0/0",
+   "fiqa": "0/0/0/0/0",
+   "nq": "0/0/0/0/0",
+   "nfcorpus": "0/0/0/0/0",
+   "trec-covid": "0/0/0/0/0",
+   "bright-biology": "0/0/0/0/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "0/0/0/0/0"
+  }
+ },
+ "laya-score-pair": {
+  "label": "Laya 421M, 4-level rubric per page (self-hosted)",
+  "n_clean": 100,
+  "missing": [],
+  "cost_usd": 0.0061,
+  "ndcg10_clean": 0.531,
+  "kinds": {
+   "clean": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 1,
+    "top3_harsh": 4,
+    "top5_harsh": 6,
+    "top5_lenient": 7,
+    "top10_harsh": 18,
+    "median_rank_harsh": 20.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "echo": {
+    "n": 100,
+    "top1_harsh": 23,
+    "top1_lenient": 23,
+    "top3_harsh": 41,
+    "top5_harsh": 50,
+    "top5_lenient": 50,
+    "top10_harsh": 67,
+    "median_rank_harsh": 5.5,
+    "top1_harsh_95": [
+     0.158,
+     0.322
+    ]
+   },
+   "claim": {
+    "n": 100,
+    "top1_harsh": 2,
+    "top1_lenient": 2,
+    "top3_harsh": 5,
+    "top5_harsh": 13,
+    "top5_lenient": 13,
+    "top10_harsh": 23,
+    "median_rank_harsh": 18.5,
+    "top1_harsh_95": [
+     0.006,
+     0.07
+    ]
+   },
+   "order": {
+    "n": 100,
+    "top1_harsh": 0,
+    "top1_lenient": 0,
+    "top3_harsh": 0,
+    "top5_harsh": 3,
+    "top5_lenient": 3,
+    "top10_harsh": 12,
+    "median_rank_harsh": 25.0,
+    "top1_harsh_95": [
+     0.0,
+     0.037
+    ]
+   },
+   "stuff": {
+    "n": 100,
+    "top1_harsh": 26,
+    "top1_lenient": 26,
+    "top3_harsh": 44,
+    "top5_harsh": 55,
+    "top5_lenient": 55,
+    "top10_harsh": 70,
+    "median_rank_harsh": 5.0,
+    "top1_harsh_95": [
+     0.184,
+     0.354
+    ]
+   },
+   "hidden": {
+    "n": 100,
+    "top1_harsh": 1,
+    "top1_lenient": 1,
+    "top3_harsh": 4,
+    "top5_harsh": 7,
+    "top5_lenient": 7,
+    "top10_harsh": 22,
+    "median_rank_harsh": 22.0,
+    "top1_harsh_95": [
+     0.002,
+     0.054
+    ]
+   }
+  },
+  "by_dataset": {
+   "scifact": "8/0/0/8/0",
+   "fiqa": "4/0/0/5/0",
+   "nq": "1/0/0/5/0",
+   "nfcorpus": "3/0/0/5/0",
+   "trec-covid": "1/0/0/1/0",
+   "bright-biology": "3/1/0/1/0",
+   "bright-economics": "1/0/0/0/0",
+   "csn-python": "2/1/0/1/1"
+  }
+ }
+}

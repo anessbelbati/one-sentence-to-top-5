@@ -1,0 +1,50 @@
+Planted page reaches #1 (harsh reading: ties count against it), out of n searches.
+Cells: harsh count (lenient count if different) | median rank of the planted page.
+
+model                                                   n  clean #1            echo           claim           order           stuff          hidden
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Keyword search (BM25)                                 100    0 | 30          68 | 1          0 | 30          1 | 30          87 | 1          1 | 30   nDCG@10 clean 0.511
+zerank-2 (ZeroEntropy, hosted API)                    100    0 | 20        11 | 4.5          0 | 22          0 | 24           6 | 6        0 | 21.5   nDCG@10 clean 0.723
+Cohere Rerank 4 Pro                                   100    1 | 21          32 | 2          0 | 21          0 | 21          29 | 2          0 | 21   nDCG@10 clean 0.727
+Cohere Rerank 4 Fast                                  100    1 | 20          44 | 2          1 | 20          1 | 20          35 | 2          1 | 19   nDCG@10 clean 0.722
+Jev, 4-level rubric, 30 pages in one call             100  0 | 19.5          1 | 11          0 | 24        0 | 25.5          0 | 16          0 | 24   nDCG@10 clean 0.711
+Jev, one pick among 30                                100    1 | 30      9 (10) | 3          1 | 30          2 | 30          3 | 30          2 | 30   nDCG@10 clean 0.682
+DeepSeek V4.1 Flash chatbot, 30 pages in one call     100  0 (6) | 30     5 (11) | 30      0 (6) | 30      0 (5) | 30      2 (5) | 30      0 (5) | 30   nDCG@10 clean 0.694
+Jev, yes/no per page                                  100    0 | 24       4 (5) | 8          0 | 24          0 | 24          0 | 16          0 | 25   nDCG@10 clean 0.717
+Open-Jev 9B, yes/no per page (self-hosted)            100  1 | 19.5        21 | 5.5          0 | 19          2 | 15         9 | 9.5        1 | 14.5   nDCG@10 clean 0.623
+Open-Jev 2B, yes/no per page (self-hosted)            100  2 | 18.5          26 | 5          2 | 18          4 | 17          13 | 7          2 | 17   nDCG@10 clean 0.585
+Together tev1-4B, per page (self-hosted)              100  0 | 21.5          11 | 7          0 | 18          0 | 17          1 | 17          0 | 21   nDCG@10 clean 0.683
+Plain Qwen3.5-4B, yes/no per page (self-hosted)       100  0 | 19.5           1 | 9          0 | 18          0 | 14          0 | 16          0 | 16   nDCG@10 clean 0.669
+Laya 421M, 4-level rubric per page (self-hosted)      100  0 (1) | 20        23 | 5.5        2 | 18.5          0 | 25          26 | 5          1 | 22   nDCG@10 clean 0.531
+
+Planted page lands in the top 5 (harsh; lenient in brackets if different), out of n searches: clean, then echo/claim/order/stuff/hidden
+
+Keyword search (BM25)                                clean        0   echo       92  claim        0  order        1  stuff       98  hidden        1
+zerank-2 (ZeroEntropy, hosted API)                   clean        3   echo       58  claim    2 (3)  order        2  stuff       47  hidden        2
+Cohere Rerank 4 Pro                                  clean    4 (5)   echo       83  claim    3 (4)  order        4  stuff       86  hidden        5
+Cohere Rerank 4 Fast                                 clean    6 (7)   echo       85  claim        6  order        5  stuff       83  hidden        7
+Jev, 4-level rubric, 30 pages in one call            clean        0   echo  19 (20)  claim        1  order        0  stuff        9  hidden    2 (3)
+Jev, one pick among 30                               clean   2 (65)   echo  76 (94)  claim   6 (65)  order  11 (69)  stuff  30 (78)  hidden  10 (70)
+DeepSeek V4.1 Flash chatbot, 30 pages in one call    clean   0 (40)   echo  17 (54)  claim   0 (41)  order   0 (45)  stuff   5 (43)  hidden   0 (40)
+Jev, yes/no per page                                 clean    1 (7)   echo  35 (39)  claim    1 (6)  order    4 (8)  stuff  17 (21)  hidden   2 (10)
+Open-Jev 9B, yes/no per page (self-hosted)           clean       12   echo       50  claim       12  order       14  stuff       32  hidden       13
+Open-Jev 2B, yes/no per page (self-hosted)           clean        8   echo       52  claim        4  order       13  stuff       36  hidden        4
+Together tev1-4B, per page (self-hosted)             clean        7   echo       39  claim       12  order  14 (15)  stuff       20  hidden        6
+Plain Qwen3.5-4B, yes/no per page (self-hosted)      clean        6   echo       34  claim        6  order        8  stuff       12  hidden        9
+Laya 421M, 4-level rubric per page (self-hosted)     clean    6 (7)   echo       50  claim       13  order        3  stuff       55  hidden        7
+
+By dataset: planted page at #1 (harsh), per kind echo/claim/order/stuff/hidden; searches per dataset: scifact 13, fiqa 13, nq 13, nfcorpus 13, trec-covid 12, bright-biology 12, bright-economics 12, csn-python 12
+
+Keyword search (BM25)                       scifact 10/0/0/11/0        fiqa  9/0/0/13/0          nq 10/0/0/12/0    nfcorpus   4/0/0/9/0  trec-covid 11/0/1/11/1  br-biology 11/0/0/12/0  br-economi  8/0/0/11/0  csn-python   5/0/0/8/0
+zerank-2 (ZeroEntropy, hosted API)          scifact   1/0/0/1/0        fiqa   1/0/0/0/0          nq   1/0/0/0/0    nfcorpus   2/0/0/2/0  trec-covid   1/0/0/1/0  br-biology   1/0/0/0/0  br-economi   4/0/0/2/0  csn-python   0/0/0/0/0
+Cohere Rerank 4 Pro                         scifact  11/0/0/8/0        fiqa   3/0/0/2/0          nq   1/0/0/0/0    nfcorpus   5/0/0/5/0  trec-covid   2/0/0/4/0  br-biology   1/0/0/1/0  br-economi   7/0/0/7/0  csn-python   2/0/0/2/0
+Cohere Rerank 4 Fast                        scifact  11/0/0/7/0        fiqa   6/0/0/4/0          nq   3/0/0/3/0    nfcorpus   4/0/0/4/0  trec-covid   3/0/0/3/0  br-biology   3/0/0/1/0  br-economi  10/1/1/9/1  csn-python   4/0/0/4/0
+Jev, 4-level rubric, 30 pages in one cal    scifact   0/0/0/0/0        fiqa   0/0/0/0/0          nq   0/0/0/0/0    nfcorpus   0/0/0/0/0  trec-covid   0/0/0/0/0  br-biology   0/0/0/0/0  br-economi   1/0/0/0/0  csn-python   0/0/0/0/0
+Jev, one pick among 30                      scifact   0/0/0/0/0        fiqa   0/0/0/0/0          nq   0/0/0/0/0    nfcorpus   4/0/1/2/1  trec-covid   3/1/1/1/1  br-biology   0/0/0/0/0  br-economi   2/0/0/0/0  csn-python   0/0/0/0/0
+DeepSeek V4.1 Flash chatbot, 30 pages in    scifact   0/0/0/0/0        fiqa   2/0/0/0/0          nq   0/0/0/0/0    nfcorpus   0/0/0/1/0  trec-covid   2/0/0/0/0  br-biology   0/0/0/0/0  br-economi   1/0/0/0/0  csn-python   0/0/0/1/0
+Jev, yes/no per page                        scifact   2/0/0/0/0        fiqa   0/0/0/0/0          nq   0/0/0/0/0    nfcorpus   1/0/0/0/0  trec-covid   0/0/0/0/0  br-biology   0/0/0/0/0  br-economi   1/0/0/0/0  csn-python   0/0/0/0/0
+Open-Jev 9B, yes/no per page (self-hoste    scifact  10/0/0/5/0        fiqa   1/0/0/0/0          nq   0/0/0/0/0    nfcorpus   3/0/1/2/0  trec-covid   1/0/0/0/0  br-biology   1/0/0/1/0  br-economi   1/0/0/0/0  csn-python   4/0/1/1/1
+Open-Jev 2B, yes/no per page (self-hoste    scifact  11/0/0/5/0        fiqa   6/0/1/2/0          nq   0/0/0/0/0    nfcorpus   2/0/0/1/0  trec-covid   2/1/1/2/1  br-biology   1/0/0/2/0  br-economi   3/1/2/1/1  csn-python   1/0/0/0/0
+Together tev1-4B, per page (self-hosted)    scifact   4/0/0/0/0        fiqa   0/0/0/0/0          nq   0/0/0/0/0    nfcorpus   0/0/0/0/0  trec-covid   1/0/0/0/0  br-biology   1/0/0/0/0  br-economi   3/0/0/0/0  csn-python   2/0/0/1/0
+Plain Qwen3.5-4B, yes/no per page (self-    scifact   0/0/0/0/0        fiqa   0/0/0/0/0          nq   0/0/0/0/0    nfcorpus   0/0/0/0/0  trec-covid   0/0/0/0/0  br-biology   0/0/0/0/0  br-economi   1/0/0/0/0  csn-python   0/0/0/0/0
+Laya 421M, 4-level rubric per page (self    scifact   8/0/0/8/0        fiqa   4/0/0/5/0          nq   1/0/0/5/0    nfcorpus   3/0/0/5/0  trec-covid   1/0/0/1/0  br-biology   3/1/0/1/0  br-economi   1/0/0/0/0  csn-python   2/1/0/1/1
