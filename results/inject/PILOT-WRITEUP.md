@@ -1,6 +1,6 @@
-# One sentence to the top 5: how easily a wrong page climbs an AI search ranking
+# Prompt injection vs keyword stuffing: can one sentence push a wrong page to the top of AI search?
 
-*September 24, 2026. 100 searches, 13 rankers, two rounds. Every number is copied from the scoring scripts; the raw scores are in the repo (`cache/`, `inject/`). Also on my blog: [anessbelbati.com/blog/one-sentence-to-top-5](https://anessbelbati.com/blog/one-sentence-to-top-5).*
+*September 24, 2026. 100 searches, 13 rankers, two rounds. Every number is copied from the scoring scripts; the raw scores are in the repo (`cache/`, `inject/`). Also on my blog: [anessbelbati.com/blog/prompt-injection-vs-keyword-stuffing-ai-seo](https://anessbelbati.com/blog/prompt-injection-vs-keyword-stuffing-ai-seo).*
 
 One piece of AI search is the reranker (ranker, for short): a model that sorts the candidate pages by how well they answer the search, so the AI reads the best ones first. So I asked a simple question. If you take a page that does not answer a search and add one sentence to it, how far up does it go?
 
@@ -196,4 +196,4 @@ Round two. Times the page reached #1, out of 100 (the first two columns are roun
 
 ## Who wrote this
 
-I'm Aness Belbati. I build Cornerlens (https://cornerlens.com): local rank tracking for agencies, every corner of town, every Monday. The code, the rewrites and every raw score for this test are at github.com/anessbelbati/one-sentence-to-top-5.
+I'm Aness Belbati. I build Cornerlens (https://cornerlens.com): local rank tracking for agencies, every corner of town, every Monday. The code, the rewrites and every raw score for this test are at github.com/anessbelbati/prompt-injection-vs-keyword-stuffing-ai-seo.

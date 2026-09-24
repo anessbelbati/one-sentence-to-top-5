@@ -1,4 +1,4 @@
-"""Write the blog post on anessbelbati.com: <site>/content/blog/one-sentence-to-top-5.mdx.
+"""Write the blog post on anessbelbati.com: <site>/content/blog/prompt-injection-vs-keyword-stuffing-ai-seo.mdx.
 
     uv run python inject/writeup.py && uv run python inject/blogpost.py <site folder> [--publish]
 
@@ -19,8 +19,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SLUG = "one-sentence-to-top-5"
-REPO = "https://github.com/anessbelbati/one-sentence-to-top-5"
+SLUG = "prompt-injection-vs-keyword-stuffing-ai-seo"
+CAMPAIGN = "one-sentence-to-top-5"   # the site's campaigns/ folder: share card, video, numbers.json
+REPO = "https://github.com/anessbelbati/prompt-injection-vs-keyword-stuffing-ai-seo"
 BENCH_POST = "/blog/i-gave-jev-a-rerankers-job"
 ORDER_POST = "/blog/does-passage-order-change-jevs-pick"
 STUDY = "https://arxiv.org/abs/2602.16752"
@@ -228,7 +229,7 @@ Keyword stuffing worked on some of the AI rankers I tested: an off-topic page wi
 
 ## The code and the data
 
-Every number in this post comes from the test's scoring scripts, and the script that writes this post stops if any other number gets into the text. The code, the edited pages and every saved response are on GitHub at [anessbelbati/one-sentence-to-top-5]({repo}). Its README has the full tables, ranker by ranker, and three commands that recompute every number from the saved responses.
+Every number in this post comes from the test's scoring scripts, and the script that writes this post stops if any other number gets into the text. The code, the edited pages and every saved response are on GitHub at [anessbelbati/prompt-injection-vs-keyword-stuffing-ai-seo]({repo}). Its README has the full tables, ranker by ranker, and three commands that recompute every number from the saved responses.
 
 Curious how these rankers compare when nobody is cheating? I tested that in [I gave Jev a reranker's job]({bench}).
 
@@ -424,7 +425,7 @@ def main() -> None:
              f"  alt: {q(alt)}", "---", ""]
     out = site / "content" / "blog" / f"{SLUG}.mdx"
     out.write_text("\n".join(front) + "\n" + text + "\n", encoding="utf-8", newline="\n")
-    card = site / "campaigns" / SLUG / "numbers.json"
+    card = site / "campaigns" / CAMPAIGN / "numbers.json"
     card.parent.mkdir(parents=True, exist_ok=True)
     card.write_text(json.dumps({**h, "source": f"{REPO}, results/inject/headline.json", "alt": alt}, indent=1) + "\n",
                     encoding="utf-8", newline="\n")

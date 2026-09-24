@@ -300,11 +300,11 @@ def main() -> None:
     L = lines.append
     missing = [name for key, name in EXPECTED.items() if key not in s]
     fg_echo, fg_para = [F(k, "echo") for k in fg], [F(k, "para") for k in fg]
-    L("# One sentence to the top 5: how easily a wrong page climbs an AI search ranking")
+    L("# Prompt injection vs keyword stuffing: can one sentence push a wrong page to the top of AI search?")
     L("")
     L(f"*September 24, 2026. {n} searches, {len(s)} rankers, two rounds. Every number is copied from the scoring scripts; the raw "
       "scores are in the repo (`cache/`, `inject/`). Also on my blog: "
-      "[anessbelbati.com/blog/one-sentence-to-top-5](https://anessbelbati.com/blog/one-sentence-to-top-5).*"
+      "[anessbelbati.com/blog/prompt-injection-vs-keyword-stuffing-ai-seo](https://anessbelbati.com/blog/prompt-injection-vs-keyword-stuffing-ai-seo).*"
       + (f" **Not run yet: {', '.join(missing)}.**" if missing else ""))
     L("")
     L("One piece of AI search is the reranker (ranker, for short): a model that sorts the candidate pages by how well they answer the search, so the AI "
@@ -574,7 +574,7 @@ def main() -> None:
     L("")
     L("I'm Aness Belbati. I build Cornerlens (https://cornerlens.com): local rank tracking for agencies, every corner of town, "
       "every Monday. The code, the rewrites and every raw score for this test are at "
-      "github.com/anessbelbati/one-sentence-to-top-5.")
+      "github.com/anessbelbati/prompt-injection-vs-keyword-stuffing-ai-seo.")
     out = RESULTS / "inject" / "PILOT-WRITEUP.md"
     # The figures the blog post's header and the share card quote (inject/blogpost.py), so they are never typed by hand.
     order5 = top5(graded, "order")
