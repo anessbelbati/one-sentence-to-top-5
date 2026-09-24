@@ -16,6 +16,7 @@ scripts that turn those responses into the tables and this page.
 | `results/inject/` | The two tables (`pilot_table.txt`, `followup_table.txt`), the same numbers as JSON, and this page (`PILOT-WRITEUP.md`). |
 | `results/runs.jsonl` | One line per run: ranker, list, kind of sentence, searches, failures, cost and call times. |
 | `inject/blogpost.py` | Writes the plain-language version of this page for anessbelbati.com. Every figure in it comes from `results/inject/headline.json`, and the script refuses to write the post if the text holds a number that is not in the data. |
+| `docs/` | The pictures on this page: the blog post's result card (`readme-header.png`) and the example search on Cohere Rerank 4 Pro as a short video (`one-sentence-to-top-5.mp4`) with its looping preview (`one-sentence-to-top-5.gif`). `writeup.py` shows them only while the data still gives the numbers they print. |
 
 ### Recompute every number on this page
 
