@@ -1,0 +1,248 @@
+{
+ "n": 100,
+ "rankers": 13,
+ "ai_models": 12,
+ "graded": 10,
+ "top1_order": [
+  0,
+  4
+ ],
+ "top5_clean": [
+  0,
+  12
+ ],
+ "top5_order": [
+  0,
+  14
+ ],
+ "top5_echo": [
+  19,
+  85
+ ],
+ "top5_para": [
+  35,
+  76
+ ],
+ "offecho_best": {
+  "ranker": "Cohere Rerank 4 Pro",
+  "top5": 66,
+  "top1": 25
+ },
+ "scifact": {
+  "n": 13,
+  "top1": [
+   10,
+   11
+  ],
+  "rankers": [
+   "Cohere Rerank 4 Pro",
+   "Cohere Rerank 4 Fast",
+   "Open-Jev 2B",
+   "Open-Jev 9B"
+  ]
+ },
+ "nq": {
+  "n": 13,
+  "max_top1": 3
+ },
+ "at30": 90,
+ "target_pos_min": 22,
+ "top1_hidden": [
+  0,
+  2
+ ],
+ "top1_claim": [
+  0,
+  2
+ ],
+ "as_good": [
+  8,
+  10
+ ],
+ "best_untouched": "Cohere Rerank 4 Pro",
+ "easiest": [
+  "Cohere Rerank 4 Fast",
+  "Cohere Rerank 4 Pro"
+ ],
+ "table": [
+  {
+   "ranker": "Keyword search",
+   "ai": false,
+   "clean5": 0,
+   "echo5": 92,
+   "stuff5": 98,
+   "echo1": 68
+  },
+  {
+   "ranker": "Cohere Rerank 4 Fast",
+   "ai": true,
+   "clean5": 6,
+   "echo5": 85,
+   "stuff5": 83,
+   "echo1": 44
+  },
+  {
+   "ranker": "Cohere Rerank 4 Pro",
+   "ai": true,
+   "clean5": 4,
+   "echo5": 83,
+   "stuff5": 86,
+   "echo1": 32
+  },
+  {
+   "ranker": "zerank-2",
+   "ai": true,
+   "clean5": 3,
+   "echo5": 58,
+   "stuff5": 47,
+   "echo1": 11
+  },
+  {
+   "ranker": "Open-Jev 2B",
+   "ai": true,
+   "clean5": 8,
+   "echo5": 52,
+   "stuff5": 36,
+   "echo1": 26
+  },
+  {
+   "ranker": "Laya",
+   "ai": true,
+   "clean5": 6,
+   "echo5": 50,
+   "stuff5": 55,
+   "echo1": 23
+  },
+  {
+   "ranker": "Open-Jev 9B",
+   "ai": true,
+   "clean5": 12,
+   "echo5": 50,
+   "stuff5": 32,
+   "echo1": 21
+  },
+  {
+   "ranker": "tev1-4B",
+   "ai": true,
+   "clean5": 7,
+   "echo5": 39,
+   "stuff5": 20,
+   "echo1": 11
+  },
+  {
+   "ranker": "Jev in yes/no mode",
+   "ai": true,
+   "clean5": 1,
+   "echo5": 35,
+   "stuff5": 17,
+   "echo1": 4
+  },
+  {
+   "ranker": "plain Qwen3.5-4B",
+   "ai": true,
+   "clean5": 6,
+   "echo5": 34,
+   "stuff5": 12,
+   "echo1": 1
+  },
+  {
+   "ranker": "Jev in rubric mode",
+   "ai": true,
+   "clean5": 0,
+   "echo5": 19,
+   "stuff5": 9,
+   "echo1": 1
+  }
+ ],
+ "tied": [
+  {
+   "ranker": "Jev in one-pick mode",
+   "clean1": 1,
+   "echo1": 9
+  },
+  {
+   "ranker": "the DeepSeek chatbot",
+   "clean1": 0,
+   "echo1": 5
+  }
+ ],
+ "offtopic_bare": [
+  0,
+  4
+ ],
+ "offstuff": {
+  "top": [
+   [
+    "Cohere Rerank 4 Pro",
+    64
+   ],
+   [
+    "Cohere Rerank 4 Fast",
+    58
+   ],
+   [
+    "Laya",
+    55
+   ]
+  ],
+  "rest": [
+   2,
+   19
+  ],
+  "keyword_search": 91
+ },
+ "jev_three": [
+  1,
+  4,
+  9
+ ],
+ "held_best": [
+  {
+   "ranker": "Jev in rubric mode",
+   "worst1": 3,
+   "para5": 37
+  },
+  {
+   "ranker": "plain Qwen3.5-4B",
+   "worst1": 4,
+   "para5": 35
+  }
+ ],
+ "pilot_range": [
+  44,
+  35,
+  54
+ ],
+ "example": {
+  "query": "Hypothalamic glutamate neurotransmission is crucial to energy balance.",
+  "offtopic_title": "Boston mayoral election, 2017",
+  "offecho_rank": {
+   "Keyword search": 1,
+   "zerank-2": 10,
+   "Cohere Rerank 4 Pro": 1,
+   "Cohere Rerank 4 Fast": 1,
+   "Jev in rubric mode": 29,
+   "Jev in one-pick mode": 2,
+   "Jev in yes/no mode": 2,
+   "Open-Jev 9B": 1,
+   "Open-Jev 2B": 6,
+   "tev1-4B": 2,
+   "plain Qwen3.5-4B": 16,
+   "Laya": 1
+  }
+ },
+ "top5_related": [
+  19,
+  56
+ ],
+ "tev1": {
+  "order1": 0,
+  "hidden1": 0,
+  "echo1": 11,
+  "echo5": 39
+ },
+ "chatbot": {
+  "clean1": 0,
+  "order1": 0
+ }
+}

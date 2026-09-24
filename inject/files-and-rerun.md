@@ -15,6 +15,7 @@ scripts that turn those responses into the tables and this page.
 | `inject/benchmark_quote.md` | The benchmark figures this page quotes, pinned to the benchmark commit they came from. |
 | `results/inject/` | The two tables (`pilot_table.txt`, `followup_table.txt`), the same numbers as JSON, and this page (`PILOT-WRITEUP.md`). |
 | `results/runs.jsonl` | One line per run: ranker, list, kind of sentence, searches, failures, cost and call times. |
+| `inject/blogpost.py` | Writes the plain-language version of this page for anessbelbati.com. Every figure in it comes from `results/inject/headline.json`, and the script refuses to write the post if the text holds a number that is not in the data. |
 
 ### Recompute every number on this page
 
@@ -53,4 +54,15 @@ lists are published in [jev-rerank-bench](https://github.com/anessbelbati/jev-re
 `candidates/build.py` rebuilds both from the public datasets. `inject/rewrite.py` asks GPT-5 mini for round two's
 searches (`OPENROUTER_API_KEY`); `build.py` adds round two once `inject/rewrites.jsonl` covers every search.
 
-MIT licensed (`LICENSE`).
+### Licenses
+
+The code and my results (the saved scores, the tables and this write-up) are MIT licensed (`LICENSE`). The searches and page
+texts (in `candidates/` and `inject/rewrites.jsonl`) come from public test sets and keep their own terms, which differ from
+one set to the next: [SciFact](https://github.com/allenai/scifact), [FiQA-2018](https://sites.google.com/view/fiqa/),
+[Natural Questions](https://ai.google.com/research/NaturalQuestions),
+[NFCorpus](https://www.cl.uni-heidelberg.de/statnlpgroup/nfcorpus/), [TREC-COVID](https://ir.nist.gov/trec-covid/) (its
+pages come from [CORD-19](https://github.com/allenai/cord19)), [BRIGHT](https://huggingface.co/datasets/xlangai/BRIGHT)
+(biology and economics) and [CodeSearchNet](https://github.com/github/CodeSearchNet) (Python). I downloaded them from the
+Hugging Face copies made by [BEIR](https://huggingface.co/BeIR) and by MTEB
+([BRIGHT](https://huggingface.co/datasets/mteb/BrightRetrieval),
+[CodeSearchNet](https://huggingface.co/datasets/mteb/CodeSearchNetRetrieval)).
